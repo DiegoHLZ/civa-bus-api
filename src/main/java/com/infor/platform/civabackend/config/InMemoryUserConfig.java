@@ -14,7 +14,7 @@ public class InMemoryUserConfig {
     public UserDetailsService userDetailsService() {
         UserDetails user = User
                 .withUsername("admin")
-                .password("{noop}admin123") // {noop} indica que la contraseña no está encriptada
+                .password("{noop}admin123")
                 .roles("ADMIN")
                 .build();
         return new InMemoryUserDetailsManager(user);

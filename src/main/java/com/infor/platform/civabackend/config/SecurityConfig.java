@@ -17,7 +17,7 @@ public class SecurityConfig {
                         .requestMatchers("/bus/**").authenticated() // protege /bus
                         .anyRequest().permitAll() // el resto se permite sin auth
                 )
-                .httpBasic(Customizer.withDefaults()); // autenticación básica (actualizado)
+                .httpBasic(Customizer.withDefaults()); // autenticación
         return http.build();
     }
 }
