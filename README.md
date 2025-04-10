@@ -42,7 +42,7 @@ CREATE DATABASE civa_db;
 Ubicado en: `src/main/resources/application.properties`
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3307/civa_db?useSSL=false&serverTimezone=UTC
+spring.datasource.url=jdbc:mysql://localhost:3307/civa_db?useSSL=false&serverTimezone=UTC  (cambiar el puerto del mysql, yo uso el 3307, normalmente usan el 3306)
 spring.datasource.username=TU_USUARIO_MYSQL
 spring.datasource.password=TU_CONTRASENA_MYSQL
 
